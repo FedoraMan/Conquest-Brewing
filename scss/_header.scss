@@ -1,5 +1,5 @@
 header {
-	background-color: #231f20;
+	background-color: $black;
 }
 .logo {
 		margin: 0;
@@ -15,30 +15,59 @@ header {
 }
 
 .mainnav {
+
+	text-align: center;
 	
 	div {
 		text-align: center;
+		@include breakpoint($medium) {
+			display: none;
+		}
 
 		a {
+			display: block;
 			color: #fff;
 			font-family: $font1;
 			text-decoration: none;
 			background-color: $deepRed;
-			padding: 20px 44%;
+			border: 2px solid $borderColor;
+			padding: 10px;
 		}
 	}	
 
 	ul {
 		padding: 0;
 		margin: 0 auto;
+		display: none;
+
+		@include breakpoint($medium) {
+			display: inline !important;
+		}
 
 		li {
 			text-align: center;
 
+			@include breakpoint($medium) {
+			display: inline-block ; 
+		}
+
 			a {
+				display: block;
 				color: #fff;
 				font-family: $font2;
 				text-decoration: none;
+				padding: 10px;
+
+				@include breakpoint($medium) {
+					padding: 10px 33.5px;
+
+
+					&:hover {
+						background-color: $borderColor;
+						
+					}
+				}
+
 			}
 		}
 	}

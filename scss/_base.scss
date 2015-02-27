@@ -1,15 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+
 }
 
 hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
+    border-top: 2px solid $borderColor;
+    margin: 2em 0;
     padding: 0;
 }
 
@@ -28,4 +33,17 @@ hr {
 
 .clearfix:after {
     clear: both;
+}
+
+body {
+    max-width: 1040px;
+    margin: 0 auto;
+    background: $deepRed;
+    
+    background-size: cover;
+}
+
+.goaway {
+    text-indent: -999999px;
+    margin: 0;
 }

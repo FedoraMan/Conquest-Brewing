@@ -1,4 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display|Playfair+Display+SC:700,400);
+* {
+  box-sizing: border-box; }
+
 html {
   color: #222;
   font-size: 1em;
@@ -8,8 +11,8 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
+  border-top: 2px solid #aea468;
+  margin: 2em 0;
   padding: 0; }
 
 .browserupgrade {
@@ -28,6 +31,16 @@ hr {
 .clearfix:after {
   clear: both; }
 
+body {
+  max-width: 1040px;
+  margin: 0 auto;
+  background: #3b1616;
+  background-size: cover; }
+
+.goaway {
+  text-indent: -999999px;
+  margin: 0; }
+
 header {
   background-color: #231f20; }
 
@@ -41,23 +54,48 @@ header {
     text-indent: -9999px;
     background-image: url(../images/logo.png); }
 
-.mainnav div {
+.mainnav {
   text-align: center; }
-  .mainnav div a {
-    color: #fff;
-    font-family: "Playfair SC";
-    text-decoration: none;
-    background-color: #3b1616;
-    padding: 20px 44%; }
-.mainnav ul {
-  padding: 0;
-  margin: 0 auto; }
-  .mainnav ul li {
+  .mainnav div {
     text-align: center; }
-    .mainnav ul li a {
+    @media (min-width: 800px) {
+      .mainnav div {
+        display: none; } }
+    .mainnav div a {
+      display: block;
       color: #fff;
-      font-family: "Playfair";
-      text-decoration: none; }
+      font-family: "Playfair Display SC";
+      text-decoration: none;
+      background-color: #3b1616;
+      border: 2px solid #aea468;
+      padding: 10px; }
+  .mainnav ul {
+    padding: 0;
+    margin: 0 auto;
+    display: none; }
+    @media (min-width: 800px) {
+      .mainnav ul {
+        display: inline !important; } }
+    .mainnav ul li {
+      text-align: center; }
+      @media (min-width: 800px) {
+        .mainnav ul li {
+          display: inline-block; } }
+      .mainnav ul li a {
+        display: block;
+        color: #fff;
+        font-family: "Playfair Display";
+        text-decoration: none;
+        padding: 10px; }
+        @media (min-width: 800px) {
+          .mainnav ul li a {
+            padding: 10px 33.5px; }
+            .mainnav ul li a:hover {
+              background-color: #aea468; } }
+
+main {
+  background-color: #581b1c;
+  padding-bottom: 1px; }
 
 .homeimage {
   background: url(../images/Homeimage.png);
@@ -66,10 +104,254 @@ header {
   padding: 15%; }
   .homeimage h1 {
     color: #fff;
-    font-family: "Playfair SC";
+    font-family: "Playfair Display SC";
     font-size: 1.5em;
     width: 100%;
     margin: 0 auto;
     text-align: center; }
+    @media (min-width: 800px) {
+      .homeimage h1 {
+        font-size: 2em; } }
+
+.beerpreveiw {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center; }
+  .beerpreveiw h2 {
+    text-align: center;
+    font-family: "Playfair Display SC";
+    color: #fff; }
+  .beerpreveiw ul {
+    padding: 0;
+    list-style: none;
+    text-align: center; }
+    @media (min-width: 800px) {
+      .beerpreveiw ul {
+        display: inline-flex; } }
+    .beerpreveiw ul li {
+      padding: 10px; }
+    .beerpreveiw ul a {
+      padding: 10px;
+      font-family: "Playfair Display";
+      text-decoration: none;
+      color: #fff; }
+    .beerpreveiw ul img {
+      width: 300px; }
+      @media (min-width: 800px) {
+        .beerpreveiw ul img {
+          width: 80%; } }
+
+.aboutus {
+  margin: 20px auto;
+  width: 80%;
+  text-align: center; }
+  @media (min-width: 800px) {
+    .aboutus {
+      float: left;
+      width: 50%; } }
+  .aboutus img {
+    width: 80%;
+    margin: 0 auto; }
+  .aboutus h3 {
+    color: #fff;
+    font-family: "Playfair Display SC";
+    text-align: center;
+    margin-bottom: 0px; }
+  .aboutus p {
+    color: #fff;
+    font-family: "Playfair Display";
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding-left: 32px;
+    padding-right: 32px; }
+
+.taproom {
+  margin: 10px auto;
+  width: 80%;
+  text-align: center; }
+  @media (min-width: 800px) {
+    .taproom {
+      float: right;
+      width: 50%; } }
+  .taproom img {
+    width: 80%;
+    margin-top: 20px; }
+  .taproom h3 {
+    color: #fff;
+    font-family: "Playfair Display SC";
+    text-align: center;
+    margin-bottom: 0px; }
+  .taproom p {
+    color: #fff;
+    font-family: "Playfair Display";
+    margin-bottom: 30px;
+    margin-top: 10px; }
+
+.listimg {
+  background-image: url(../images/beerlistimage.png);
+  padding: 120px;
+  background-position: center;
+  background-size: cover; }
+
+.listhead {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Playfair Display SC";
+  color: #fff; }
+
+@media (min-width: 800px) {
+  .lists {
+    background-color: #581b1c;
+    padding-bottom: 600px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 800px; } }
+
+table {
+  border: 2px solid #aea468;
+  color: #fff;
+  font-family: "Playfair Display SC";
+  margin: 50px auto; }
+  table th {
+    font-size: 1.2em;
+    padding: 10px; }
+  table td {
+    padding: 10px; }
+  table a {
+    font-family: "Playfair Display";
+    color: #fff;
+    text-decoration: none;
+    padding: 10px; }
+
+@media (min-width: 800px) {
+  .yearly {
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 10%; } }
+
+.seasonal th {
+  padding-left: 65px;
+  padding-right: 65px; }
+@media (min-width: 800px) {
+  .seasonal {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 10%; } }
+
+.imperials th {
+  padding-left: 14px;
+  padding-right: 14px; }
+@media (min-width: 800px) {
+  .imperials {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    left: 10%; } }
+
+.limited th {
+  padding-left: 35px;
+  padding-right: 35px; }
+@media (min-width: 800px) {
+  .limited {
+    float: left;
+    position: absolute;
+    bottom: 40px;
+    right: 10%; } }
+
+.blondewrap {
+  text-align: center; }
+  @media (min-width: 800px) {
+    .blondewrap {
+      padding-bottom: 700px;
+      padding-right: 70px;
+      padding-left: 70px; } }
+
+.blondehead {
+  margin-top: 0;
+  padding-top: 10px;
+  font-family: "Playfair Display SC";
+  color: #fff;
+  text-align: center; }
+  @media (min-width: 800px) {
+    .blondehead {
+      padding-left: 324px; } }
+
+.bottle {
+  width: 175px; }
+  @media (min-width: 800px) {
+    .bottle {
+      float: left; } }
+
+.details {
+  color: #fff;
+  font-family: "Playfair Display";
+  padding: 0 20px;
+  text-align: left; }
+  @media (min-width: 800px) {
+    .details {
+      float: right;
+      width: 50%; } }
+
+.vitals {
+  color: #fff;
+  font-family: "Playfair Display";
+  padding: 0 5px;
+  text-align: left; }
+
+footer {
+  background-color: #231f20;
+  clear: both; }
+  footer p {
+    margin-top: 10px;
+    margin-left: 4%;
+    width: 80%;
+    color: #fff;
+    float: left; }
+    @media (min-width: 600px) {
+      footer p {
+        margin-left: 7%; } }
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    footer ul li {
+      display: inline-block; }
+      footer ul li a {
+        color: #fff;
+        font-size: 2em;
+        float: right; }
+
+.findbutton {
+  display: block;
+  margin: 30px auto;
+  width: 150px;
+  height: 194px;
+  background-image: url(../images/searchshield.png);
+  background-position: center;
+  padding: 70px 30px;
+  color: #fff;
+  font-family: "Playfair Display SC";
+  text-decoration: none;
+  text-align: center;
+  clear: both; }
+  @media (min-width: 800px) {
+    .findbutton {
+      width: 300px;
+      height: 387px;
+      background-image: url(../images/buttonsheildbig.png);
+      font-size: 2.1em;
+      padding: 120px 30px; } }
+
+.button {
+  background-color: #3b1616;
+  border: 2px solid #aea468;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Playfair Display";
+  text-align: center;
+  margin: 10px; }
 
 /*# sourceMappingURL=main.css.map */

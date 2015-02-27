@@ -1,3 +1,10 @@
+main {
+	background-color: $mainRed;
+	padding-bottom: 1px;
+}
+
+// Home Page/ Index page
+
 .homeimage {
 	background: url(../images/Homeimage.png);
 	background-position: center;
@@ -11,5 +18,274 @@
 			width: 100%;
 			margin: 0 auto;
 			text-align: center;
+
+			@include breakpoint($medium) {
+				font-size: 2em;
+			}
 		}
+}
+
+.beerpreveiw {
+
+	margin: 0 auto;
+	width: 90%;
+	text-align: center;
+
+	h2 {
+		text-align: center;
+		font-family: $font1;
+		color: #fff;
+	}
+
+	ul {
+		padding: 0;
+		list-style: none;
+		text-align: center;
+		@include breakpoint($medium) {
+				display: inline-flex;
+			}
+
+		li {
+			padding: 10px;
+		}
+
+		a {
+			padding: 10px;
+			font-family: $font2;
+			text-decoration: none;
+			color: #fff;
+		}
+
+		img {
+			width: 300px;
+			@include breakpoint($medium) {
+				width: 80%;
+			}
+		}
+
+	}
+
+}
+
+.aboutus {
+
+	margin: 20px auto;
+	width: 80%;
+	text-align: center;
+	@include breakpoint($medium) {
+		float: left;
+		width: 50%
+	}
+
+	img {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	h3 {
+		color: #fff;
+		font-family: $font1;
+		text-align: center;
+		margin-bottom: 0px;
+	}
+
+	p {
+		color: #fff;
+		font-family: $font2;
+		margin-bottom: 30px;
+		margin-top: 10px;
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+}
+
+.taproom {
+
+	margin: 10px auto;
+	width: 80%;
+	text-align: center;
+	@include breakpoint($medium) {
+		float: right;
+		width: 50%
+	}
+
+	img {
+		width: 80%;
+		margin-top: 20px;
+	}
+
+	h3 {
+		color: #fff;
+		font-family: $font1;
+		text-align: center;
+		margin-bottom: 0px;
+	}
+
+	p {
+		color: #fff;
+		font-family: $font2;
+		margin-bottom: 30px;
+		margin-top: 10px;
+	}
+
+}
+
+
+// Beer list page
+
+.listimg {
+	background-image: url(../images/beerlistimage.png);
+	padding: 120px;
+	background-position: center;
+	background-size: cover;
+}
+
+.listhead {
+	margin-top: 10px;
+	text-align: center;
+	font-family: $font1;
+	color: #fff;
+}
+
+.lists {
+	@include breakpoint($medium) {
+		background-color: $mainRed;
+		padding-bottom: 600px;
+		position: relative;
+		margin: 0 auto;
+		max-width: 800px;
+	}
+}
+
+table {
+	border: 2px solid $borderColor;
+	color: #fff;
+	font-family: $font1;
+	margin: 50px auto;
+
+	th {
+		font-size: 1.2em;
+		padding: 10px;
+	}
+
+	td {
+		padding: 10px;
+	}
+
+	a {
+		font-family: $font2;
+		color: #fff;
+		text-decoration: none;
+		padding: 10px;
+	}
+}
+
+.yearly {
+
+	@include breakpoint($medium) {
+		float: left;
+		position: absolute;
+		top: 0;
+		left: 10%;
+	}
+}
+
+.seasonal {
+
+	th {
+		padding-left: 65px;
+		padding-right: 65px;
+	}
+
+	@include breakpoint($medium) {
+		float: right;
+		position: absolute;
+		top: 0;
+		right: 10%;
+	}
+}
+
+.imperials {
+
+	th {
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+
+	@include breakpoint($medium) {
+		float: left;
+		position: absolute;
+		bottom: 0;
+		left: 10%;
+	}
+}
+
+.limited {
+
+	th {
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+
+	@include breakpoint($medium) {
+		float: left;
+		position: absolute;
+		bottom: 40px;
+		right: 10%;
+	}
+}
+
+
+
+// Blonde page
+
+.blondewrap {
+	text-align: center;
+
+	@include breakpoint($medium) {
+		padding-bottom: 700px;
+		padding-right: 70px;
+		padding-left: 70px;
+	}
+}
+
+.blondehead {
+	margin-top: 0;
+	padding-top: 10px;
+	font-family: $font1;
+	color: #fff;
+	text-align: center;
+
+	@include breakpoint($medium) {
+		padding-left: 324px;
+	}
+}
+
+.bottle {
+	width: 175px;
+	
+	@include breakpoint($medium) {
+		float: left;
+	}
+
+}
+
+.details {
+	color: #fff;
+	font-family: $font2;
+	padding: 0 20px;
+	text-align: left;
+
+	@include breakpoint($medium) {
+		float: right;
+		width: 50%;
+	}
+}
+
+.vitals {
+	color: #fff;
+	font-family: $font2;
+	padding: 0 5px;
+	text-align: left;
 }
