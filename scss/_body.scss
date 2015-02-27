@@ -28,8 +28,9 @@ main {
 .beerpreveiw {
 
 	margin: 0 auto;
-	width: 90%;
+	width: 80%;
 	text-align: center;
+
 
 	h2 {
 		text-align: center;
@@ -42,11 +43,16 @@ main {
 		list-style: none;
 		text-align: center;
 		@include breakpoint($medium) {
-				display: inline-flex;
+				display: inline-block;
 			}
 
 		li {
 			padding: 10px;
+
+			@include breakpoint($medium) {
+				float: left;
+				padding: 0px;
+			}
 		}
 
 		a {
@@ -59,7 +65,8 @@ main {
 		img {
 			width: 300px;
 			@include breakpoint($medium) {
-				width: 80%;
+				width: 150px;
+
 			}
 		}
 

@@ -33,4 +33,8 @@
 	text-align: center;
 	margin: 10px;
 
+	@include breakpoint($large) {
+		margin: 168px;
+	}
+
 }
