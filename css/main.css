@@ -12,7 +12,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 2px solid #aea468;
-  margin: 2em 0;
+  margin: 2em 45px;
   padding: 0; }
 
 .browserupgrade {
@@ -91,7 +91,8 @@ header {
           .mainnav ul li a {
             padding: 10px 33.5px; }
             .mainnav ul li a:hover {
-              background-color: #aea468; } }
+              background-color: #aea468;
+              color: #000; } }
 
 main {
   background-color: #581b1c;
@@ -111,7 +112,7 @@ main {
     text-align: center; }
     @media (min-width: 800px) {
       .homeimage h1 {
-        font-size: 2em; } }
+        font-size: 2.5em; } }
 
 .beerpreveiw {
   margin: 0 auto;
@@ -120,7 +121,8 @@ main {
   .beerpreveiw h2 {
     text-align: center;
     font-family: "Playfair Display SC";
-    color: #fff; }
+    color: #fff;
+    font-size: 1.7em; }
   .beerpreveiw ul {
     padding: 0;
     list-style: none;
@@ -133,17 +135,21 @@ main {
       @media (min-width: 800px) {
         .beerpreveiw ul li {
           float: left;
-          padding: 0px; } }
+          padding: 10px;
+          width: 25%; } }
     .beerpreveiw ul a {
       padding: 10px;
       font-family: "Playfair Display";
       text-decoration: none;
-      color: #fff; }
+      color: #fff;
+      text-align: center;
+      font-size: 1.2em;
+      display: block; }
     .beerpreveiw ul img {
       width: 300px; }
       @media (min-width: 800px) {
         .beerpreveiw ul img {
-          width: 150px; } }
+          width: 100%; } }
 
 .aboutus {
   margin: 20px auto;
@@ -160,14 +166,16 @@ main {
     color: #fff;
     font-family: "Playfair Display SC";
     text-align: center;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    font-size: 1.5em; }
   .aboutus p {
     color: #fff;
     font-family: "Playfair Display";
     margin-bottom: 30px;
     margin-top: 10px;
     padding-left: 32px;
-    padding-right: 32px; }
+    padding-right: 32px;
+    font-size: 1.2em; }
 
 .taproom {
   margin: 10px auto;
@@ -184,12 +192,14 @@ main {
     color: #fff;
     font-family: "Playfair Display SC";
     text-align: center;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    font-size: 1.5em; }
   .taproom p {
     color: #fff;
     font-family: "Playfair Display";
     margin-bottom: 30px;
-    margin-top: 10px; }
+    margin-top: 10px;
+    font-size: 1.2em; }
 
 .listimg {
   background-image: url(../images/beerlistimage.png);
@@ -203,10 +213,16 @@ main {
   font-family: "Playfair Display SC";
   color: #fff; }
 
+.listdescription {
+  text-align: center;
+  color: #fff;
+  font-size: 1.1em;
+  font-family: "Playfair Display"; }
+
 @media (min-width: 800px) {
   .lists {
     background-color: #581b1c;
-    padding-bottom: 600px;
+    padding-bottom: 730px;
     position: relative;
     margin: 0 auto;
     max-width: 800px; } }
@@ -215,7 +231,8 @@ table {
   border: 2px solid #aea468;
   color: #fff;
   font-family: "Playfair Display SC";
-  margin: 50px auto; }
+  margin: 50px auto;
+  width: 250px; }
   table th {
     font-size: 1.2em;
     padding: 10px; }
@@ -226,6 +243,14 @@ table {
     color: #fff;
     text-decoration: none;
     padding: 10px; }
+    table a:hover {
+      color: #aea468; }
+
+.description {
+  font-family: "Playfair Display";
+  font-size: 0.80em;
+  text-align: center;
+  color: #fff; }
 
 @media (min-width: 800px) {
   .yearly {
@@ -288,7 +313,7 @@ table {
     .bottle {
       float: left;
       width: 175px;
-      margin-left: 30px; } }
+      margin-left: 80px; } }
 
 .details {
   color: #fff;
@@ -323,7 +348,8 @@ footer {
   footer ul {
     list-style: none;
     margin: 0;
-    padding: 0; }
+    padding-left: 0;
+    padding-top: 6px; }
     footer ul li {
       display: inline-block; }
       footer ul li a {
@@ -344,6 +370,9 @@ footer {
   text-decoration: none;
   text-align: center;
   clear: both; }
+  .findbutton:hover {
+    color: #000;
+    background-image: url(../images/searchshieldhover.png); }
 
 .button {
   background-color: #3b1616;
@@ -357,5 +386,9 @@ footer {
   @media (min-width: 878px) {
     .button {
       margin: 168px; } }
+  @media (min-width: 800px) {
+    .button:hover {
+      background-color: #aea468;
+      color: #000; } }
 
 /*# sourceMappingURL=main.css.map */
