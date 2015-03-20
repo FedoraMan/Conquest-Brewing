@@ -146,7 +146,7 @@ main {
       font-size: 1.2em;
       display: block; }
     .beerpreveiw ul img {
-      width: 300px; }
+      max-width: 100%; }
       @media (min-width: 800px) {
         .beerpreveiw ul img {
           width: 100%; } }
