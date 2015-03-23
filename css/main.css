@@ -161,7 +161,8 @@ main {
       width: 50%; } }
   .aboutus img {
     width: 80%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    border: 3px solid #aea468; }
   .aboutus h3 {
     color: #fff;
     font-family: "Playfair Display SC";
@@ -178,7 +179,7 @@ main {
     font-size: 1.2em; }
 
 .taproom {
-  margin: 10px auto;
+  margin: 1px auto;
   width: 80%;
   text-align: center; }
   @media (min-width: 800px) {
@@ -187,7 +188,8 @@ main {
       width: 50%; } }
   .taproom img {
     width: 80%;
-    margin-top: 20px; }
+    margin-top: 20px;
+    border: 3px solid #aea468; }
   .taproom h3 {
     color: #fff;
     font-family: "Playfair Display SC";
@@ -293,9 +295,10 @@ table {
   text-align: center; }
   @media (min-width: 800px) {
     .blondewrap {
-      padding-bottom: 720px;
+      padding-bottom: 873px;
       padding-right: 70px;
-      padding-left: 70px; } }
+      padding-left: 70px;
+      padding-top: 61px; } }
 
 .blondehead {
   margin-top: 0;
@@ -305,7 +308,7 @@ table {
   text-align: center; }
   @media (min-width: 800px) {
     .blondehead {
-      padding-left: 324px; } }
+      display: none; } }
 
 .bottle {
   width: 100px; }
@@ -313,7 +316,8 @@ table {
     .bottle {
       float: left;
       width: 175px;
-      margin-left: 80px; } }
+      margin-left: 80px;
+      margin-top: 19px; } }
 
 .details {
   color: #fff;
@@ -324,12 +328,23 @@ table {
     .details {
       float: right;
       width: 50%; } }
+  .details h1 {
+    display: none; }
+    @media (min-width: 800px) {
+      .details h1 {
+        display: block;
+        font-family: "Playfair Display SC"; } }
+
+.beerdescription {
+  text-align: left; }
 
 .vitals {
   color: #fff;
   font-family: "Playfair Display";
   padding: 0 5px;
   text-align: left; }
+  .vitals span {
+    color: #aea468; }
 
 footer {
   background-color: #231f20;
